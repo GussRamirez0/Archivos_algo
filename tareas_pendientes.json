@@ -1,0 +1,14 @@
+[
+    {
+        "titulo": "Vectores",
+        "descripcion": "Ejercicios de Vectores",
+        "completada": false,
+        "fecha_vencimiento": "2023-09-30"
+    },
+    {
+        "titulo": "vec",
+        "descripcion": "vec",
+        "completada": false,
+        "fecha_vencimiento": "2023-09-30"
+    }
+]

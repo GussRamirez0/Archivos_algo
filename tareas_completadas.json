@@ -1,0 +1,24 @@
+[
+    {
+        "titulo": "Hacer ejercicio",
+        "descripcion": "Hacer 30 minutos de ejercicios de pesas",
+        "completada": true
+    },
+    {
+        "titulo": "Ejercicio Algoritmo",
+        "descripcion": "Hacer un Algoritmo simple con su estructura",
+        "completada": true
+    },
+    {
+        "titulo": "Informe Algoritmos",
+        "descripcion": "Terminar el informe mensual de Tareas",
+        "completada": true,
+        "fecha_vencimiento": "2023-10-15"
+    },
+    {
+        "titulo": "Comprar Gasolina",
+        "descripcion": "Ir a la gasolinera y comprar la gasolina necesaria para el carro",
+        "completada": true,
+        "fecha_vencimiento": "2023-09-30"
+    }
+]

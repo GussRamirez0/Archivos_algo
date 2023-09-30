@@ -2,11 +2,11 @@ import json
 import os
 from datetime import datetime, timedelta
 
-# Nombre de los archivos de datos
+
 TAREAS_PENDIENTES_FILE = "tareas_pendientes.json"
 TAREAS_COMPLETADAS_FILE = "tareas_completadas.json"
 
-# Función para cargar las tareas desde un archivo JSON
+
 def cargar_tareas(nombre_archivo):
     if os.path.exists(nombre_archivo):
         with open(nombre_archivo, "r") as archivo:
@@ -14,12 +14,12 @@ def cargar_tareas(nombre_archivo):
     else:
         return []
 
-# Función para guardar las tareas en un archivo JSON
+
 def guardar_tareas(tareas, nombre_archivo):
     with open(nombre_archivo, "w") as archivo:
         json.dump(tareas, archivo, indent=4)
 
-# Función para agregar una tarea a la lista de tareas pendientes
+
 def agregar_tarea(tareas_pendientes):
     titulo = input("Ingrese el título de la tarea: ")
     descripcion = input("Ingrese la descripción de la tarea: ")
@@ -33,7 +33,7 @@ def agregar_tarea(tareas_pendientes):
     tareas_pendientes.append(tarea)
     print("Tarea agregada con éxito.")
 
-# Función para listar las tareas pendientes o completadas
+
 def listar_tareas(tareas, completadas=False):
     if completadas:
         print("Lista de tareas completadas:")
@@ -44,7 +44,7 @@ def listar_tareas(tareas, completadas=False):
         estado = "Completada" if tarea["completada"] else "Pendiente"
         print(f"{idx}. {tarea['titulo']} - {estado}")
 
-# Función para marcar una tarea como completada
+
 def marcar_completada(tareas_pendientes, tareas_completadas):
     listar_tareas(tareas_pendientes)
     try:
@@ -61,7 +61,7 @@ def marcar_completada(tareas_pendientes, tareas_completadas):
     except ValueError:
         print("Entrada inválida. Debe ingresar un número.")
 
-# Función para verificar y mostrar tareas vencidas
+
 def mostrar_tareas_vencidas(tareas_pendientes):
     hoy = datetime.now()
     print("Tareas vencidas o próximas a vencerse:")
